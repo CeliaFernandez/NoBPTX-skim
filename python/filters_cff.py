@@ -27,7 +27,7 @@ APVModeFilter = cms.EDFilter("APVModeFilter",
 # Select only events passing certain triggers.
 # The throw option causes the job to throw a fatal error if the desired trigger is not present in the menu of all runs.
 from HLTrigger.HLTfilters.hltHighLevel_cfi import *
-triggerSelection = hltHighLevel.clone(TriggerResultsTag = "TriggerResults::HLT", HLTPaths = ["*"], throw = cms.bool(False))
+triggerSelection = hltHighLevel.clone(TriggerResultsTag = "TriggerResults::HLT", HLTPaths = ['HLT_L2Mu10_NoVertex_NoBPTX3BX_v*'], throw = cms.bool(False))
 
 # Event filters
 cosmicFilters = cms.Sequence(MagneticFieldFilter * trackerHVonFilter * APVModeFilter * triggerSelection)                         

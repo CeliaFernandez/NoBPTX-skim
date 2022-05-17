@@ -3,7 +3,7 @@ import FWCore.ParameterSet.Config as cms
 # Produced reduced dataset containing only info needed to measure muon efficiency
 # with cosmic rays in spark tool
 #
-# @ Celia Fernandez Madrazo (inspired by Ian Tomalin code)
+# @ Celia Fernandez Madrazo (from Ian Tomalin code)
 
 
 process = cms.Process("skim")
